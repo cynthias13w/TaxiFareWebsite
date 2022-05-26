@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 import math
 
-new_title = '<p style="font-family:Snell Roundhand, fantasy; color: #000000; text-align: center; font-size: 42px;"> 😀 Calculate your Taxi Fare 🚕</p>'
+new_title = '<p style="font-family:Snell Roundhand, fantasy; color: #000000; text-align: center; font-size: 42px;"> 😀 Calculate your Taxi Fare! 🚕</p>'
 st.markdown(new_title, unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
