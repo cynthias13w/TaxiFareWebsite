@@ -76,7 +76,7 @@ with st.form(key = 'columns_in_form'):
         "dropoff_latitude": float(lat2),
         "passenger_count": int(passenger_count)}
 
-    response = requests.get("https://taxifare.lewagon.ai/predict", dictionary).json()
+    response = requests.get("https://taxifare.lewagon.ai/predict", params = dictionary).json()
     fare = "$" + str(round(response['fare'], 2))
     #st.metric("ESTIMATED DISTANCE", distance_func(lat1,lon1,lat2,lon2))
     submit_button = st.form_submit_button(label='Calculate my taxi fare!')
